@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>大鲨鱼</title>   
+</head>
+
+<style>
+    .shark{
+    	width: 509px;
+    	height: 270px;
+    	margin: 10px auto;
+    	background: url(images/shark1.png) left top;
+    	animation: move 1s steps(8) infinite;
+    }
+    @keyframes move{
+    	0%{
+
+    	}
+    	100%{
+    		background-position: left -2160px;
+    	}
+    }
+    .box1{
+    	width: 509px;
+    	height: 270px;
+    	animation: move2 8s infinite linear;
+    	content: "";
+    }
+    @keyframes move2{
+    	0%{
+    		transform: translateX(-500px);
+    	}
+    	100%{
+    		transform: translateX(1235px);
+    	}
+    }
+    .fish{
+    	width: 174px;
+    	height: 126px;
+    	margin: 10px auto;
+    	background: url(images/fish8.png) left top;
+    	animation: move3 1s steps(8) infinite;
+    }
+    @keyframes move3{
+    	0%{
+
+    	}
+    	100%{
+    		background-position: left -1008px;
+    	}
+    }
+    .box2{
+    	width: 509px;
+    	height: 270px;
+    	animation: move4 8s infinite linear;
+    	content: "";
+    }
+    @keyframes move4{
+    	0%{
+    		transform: translateX(-500px);
+    	}
+    	100%{
+    		transform: translateX(1235px);
+    	}
+    }
+</style>
+<body>
+  <div class="box1">
+    <div class="shark"></div>
+  </div>
+
+  <div class="box2">
+    <div class="fish"></div>
+   </div>
+</body>
+</html>
